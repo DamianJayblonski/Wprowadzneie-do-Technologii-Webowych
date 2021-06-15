@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMED Rzeszów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class">
+        <div class="logo_with_contact_class" id="white_border_bottom">
+            <a href="index.html" class="logo"><img src="images/Jmed logo.jpg" alt="Selfy"></a>   
+        </div>
+       
+        
+        
+        <div class="logo_with_hamburger_class" id="white_border_bottom">
+        
+            <button class="hamburger_button" ></button>
+            <div class="links_in_menu">
+                <a class="link_in_nav_menu" href="index.html">Główna</a>
+                <a class="link_in_nav_menu" href="personel.html">Personel</a>
+                <a class="link_in_nav_menu" href="gabinet.html">Gabinet</a>
+                <a class="link_in_nav_menu" href="galeria.html">Galeria</a>
+                <a class="link_in_nav_menu" href="dojazd.html">Dojazd</a>
+                <a class="link_in_nav_menu nav_link_active" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="nav_menu_mobile nav_menu_mobile_closed" id="white_border_bottom">
+            <a class="link_in_nav2_menu" href="index.html">Główna</a>
+            <a class="link_in_nav2_menu" href="personel.html">Personel</a>
+            <a class="link_in_nav2_menu" href="gabinet.html">Gabinet</a>
+            <a class="link_in_nav2_menu" href="galeria.html">Galeria</a>
+            <a class="link_in_nav2_menu" href="dojazd.html">Dojazd</a>
+            <a class="link_in_nav2_menu nav_link_active" href="kontakt.html">Kontakt</a>
+        </div>
+        
+            
+    </div>
+
+
+
+
+    <div class="main" >
+        <div id="contact_main" style="border-bottom: solid 1px rgb(27, 73, 134);">
+            <div class="contact_left_side">
+                <h1 class="title_part_of_main" id="contact_main_title">Rejestracja i kontakt</h1>
+                <p class="headers_lower_text">
+                    Zapraszamy do rejestracji telefonicznej 
+                    <br>
+                    PN - PT w godz. 09:00 - 17:00
+                    <br>
+                    +48 – 517 617 966
+                </p> 
+            </div>
+            <div class="contact_right_side" >
+                <div id="contact_right_side_upper">
+                    <h1 class="title_part_of_main">Media</h1>
+                    <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/" class="yellow_hover"><p class="text_part_of_main arrow">Link do naszego Facebook-a</p></a>
+                    <a href="https://www.instagram.com/jmed_specjalisci/" class="yellow_hover"><p class="text_part_of_main arrow">Link do naszego Instagram-a</p></a>
+                    <!-- <a href="" class="yellow_hover"><p class="text_part_of_main arrow">Linkedin</p></a> -->
+                </div>
+                
+    
+            </div>
+        </div>   
+        <img id="about_japanese_man" src="images/Jmed grupowe 2.jpg" alt="" style="margin-bottom: 15px;">
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="logo_links_footer">
+
+            <a href="https://www.instagram.com/jmed_specjalisci/"><img src="images/instagram.png" alt="F"></a>
+            <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/"><img src="images/facebook.png" alt="F"></a>
+        </div>
+        <div class="selfy_copyright">
+            <p>© Copyright JMED 2021</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

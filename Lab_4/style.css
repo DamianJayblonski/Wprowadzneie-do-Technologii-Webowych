@@ -1,0 +1,240 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    font-family: Arial,sans-serif;
+}
+p{
+    margin: 0;
+}
+#menu{
+    display: flex;
+    background-color:#252a3a;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#menu_button{
+    font-size:1rem;
+    height:28px;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #252a3a;
+    border: none;
+    color: #2179e6;
+    margin-top:5px 0 5px;
+}
+.square{
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+    background-color: #ffc94c;
+    display: flex;
+    margin-right:5px;
+}
+#blue_square{
+    background-color: #41ccb4;
+}
+#green_square{
+    background-color: #40c365;
+}
+
+
+#rest_of_menu{
+    align-items: left;
+    height:0;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    color: #366096;
+
+}
+#rest_of_menu button{
+    font-size: 1.1rem;
+    width: 110px;
+    height: 35px;
+    color: #fff;
+    background-color: #1b98f8;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+}
+#rest_of_menu p{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.rest_of_menu_link{
+    text-decoration: none;
+    color: #fff;
+}
+#menu_button:focus{
+    outline: none;
+    border: none;
+}
+
+#menu_button:focus-within + #rest_of_menu{
+    
+    background-color: #252a3a;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+}
+
+
+.post{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.post-open{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(216, 214, 214);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.post-unopen{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    border-left: 5px solid rgb(42, 129, 243);
+}
+.avatar_image{
+    width:50px;
+    height:50px;
+    margin-left:20px;
+}
+.text_in_posts{
+padding-left: 5px;
+}
+.name_in_post{
+    text-transform: uppercase;
+    color:rgb(138, 138, 138)
+}
+.title_in_post{
+    font-weight: 600;
+}
+.text_in_post{
+    padding-top: 2px;
+}
+#big_post_header{
+    display: grid;
+    padding-top:30px;
+    grid-template-columns: 54% auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    justify-content: space-between;
+}
+#big_post_header_text{
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+}
+#big_post_title{
+    font-weight: 600;
+    font-size:2rem;
+}
+#big_post_header_date_and_rest{
+    text-decoration: none;
+}
+.big_post_header_date_and_rest_a_class{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+#big_post_header_date_and_rest_name{
+    color:rgb(123, 158, 255);
+}
+#big_post_buttons{
+    
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
+    align-items: right;
+}
+#move_btn{
+    grid-column:2;
+}
+.big_post_button{
+    height:28px;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 100px;
+    margin-top:5px;
+    margin-right: 5px;
+}
+#big_post_content p{
+    color: black;
+    padding: 20px
+}
+
+@media screen and (min-width:640px){
+    body{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "grid_menu grid_rest"
+        
+    }
+    #menu_button{
+        visibility: hidden;
+    }
+    #main{
+        grid-area: grid_rest;
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 0.3fr 0.7fr;
+        grid-template-areas: 
+        "grid_posts"
+        "grid_big_post";
+    }
+    #rest_of_menu{
+        grid-area: grid_menu;
+        height: auto;
+        width: 200px;
+    }
+    #posts{
+        grid-area: grid_posts;
+        overflow: scroll;
+
+    }
+    #big_post{
+        grid-area: grid_big_post;
+        overflow: scroll;
+    }
+    
+}
+@media screen and (min-width:960px) {
+    
+    #main{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #posts{
+        border-right: 1px solid rgb(212, 212, 212);
+    }
+    #big_post_buttons{
+        display: grid;
+        grid-template-columns: 0fr 0fr 0fr;
+        grid-template-rows: 0fr;
+    }
+    #move_btn{
+        grid-column:3;
+    }
+}

@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#header-bar{
+    height: 5px;
+    background-color: #201e1e;
+    width: 100%;
+}
+
+#main{
+    width: 1000px;
+}
+
+#header{
+   
+   display: flex;
+     justify-content: space-between;
+   padding-bottom: 20px;
+    padding-top: 30px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+
+}
+
+
+/*#header-links{
+     display: flex;
+    align-items:flex-end;
+
+}*/
+
+#header-links a{
+    text-decoration: none;/*wyłączyć podkreślenie*/
+    text-transform: uppercase;
+    padding-left: 30px;
+    color: rgb(26, 144, 184);
+    font-size: 18px;/**/
+}
+#second-header{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex; /* w poziomie*/
+    flex-direction: column; /*zrobilo wiersze jeden pod drugim*/
+    align-items: center;
+}
+
+#second-header img{
+    width: 100%;
+}
+
+#second-header p{
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(26, 144, 184);
+}
+
+#columns{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+}
+
+#column-left{
+    width: 45%;    
+}
+
+#column-left p{
+    font-size: 18px;
+}
+
+#column-right{
+    width: 45%;    
+}
+
+#column-right p{
+    font-size: 18px;
+}
+
+#circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#circles p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+
+}
+#circle {
+    width: 200px;
+    height: 200px;
+    background: rgb(84, 177, 219);
+    border-radius: 50%;
+    margin-right: -40px;
+    opacity: 0.7;
+}
+
+#circle2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(84, 177, 219);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+#circle3 {
+    width: 200px;
+    height: 200px;
+    background: rgb(84, 177, 219);
+    border-radius: 50%;
+    margin-left: -40px;
+    opacity: 0.7;
+}
+
+#second-columns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#second-columns h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+}
+
+#col1{
+    width:23%;
+    line-height: 24px;/*wysokość lini między wierszami*/
+}
+
+#col2{
+    width:23%;
+    line-height: 24px;
+}
+
+#col2 a{
+    text-decoration: none;
+    color: rgb(26, 144, 184);
+}
+
+#col3{
+    width:23%;
+}
+
+#col4{
+    width:230px;
+}
+#col4 a{
+    text-decoration: none;
+    color: rgb(26, 144, 184);
+}
+
+#footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    color: rgb(209, 209, 209);
+    height: 150px;
+    background-color: #242e30;
+    background-image: url(img/zabek.jpg);
+    background-repeat: repeat-x;
+    text-align: center;
+    line-height: 34px; /*wysokość lini między wierszami*/
+    font-size: 18px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="cards">
+            <div id="happy_sushi" class="card">
+                <div class="upper_card_part">
+                    <h3>Happy Sushi Lunch</h3>
+                    <ul class="menu">
+                        <li>Lorem ipsum dolor</li>
+                        <li>sit amet consectetur</li>
+                        <li>adipisicing elit</li>
+                        <li>Eum quos assumenda</li>
+                    </ul>
+                </div>
+                <div class="price_div">
+                    <p>$12</p>
+                </div>
+
+            </div>
+            <div id="sushi_lover" class="card">
+                <div class="upper_card_part">
+                    <h3>Sushi Lover's Lunch</h3>
+                    <ul class="menu">
+                        <li>sed molestiae illo</li>
+                        <li>Ullam sequi</li>
+                        <li>nihil illo</li>
+                        <li>ad quae labore</li>
+                    </ul>
+                </div>
+                <div class="price_div">
+                    <p>$18</p>
+                </div>
+            </div>
+        </div>
+        <div id="button_div">
+            <button class="przycisk" id="switch_to_lover" >Switch to Sushi Lover's Lunch! ￫</button>
+            <button class="przycisk" id="switch_to_happy" >￩ Switch to Happy Sushi lunch!</button>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        const div_lover = document.querySelector('#sushi_lover');
+        const div_happy = document.querySelector('#happy_sushi');
+
+        div_happy.classList.add("happy_sushi")
+        div_lover.classList.add("sushi_lover")
+
+        
+
+
+        const to_happy_btn = document.querySelector('#switch_to_happy');
+        const to_lover_btn = document.querySelector('#switch_to_lover');
+
+        to_happy_btn.addEventListener('click',()=>{
+            document.getElementById("switch_to_happy").style.display = "none";
+            document.getElementById("switch_to_lover").style.display = "flex";
+
+            div_happy.classList.remove("happy_sushi")
+            div_lover.classList.remove("sushi_lover") 
+            
+            div_happy.classList.remove("happy_to_back")
+            div_happy.classList.add("happy_to_front")
+
+            div_lover.classList.remove("lover_to_front")
+            div_lover.classList.add("lover_to_back")
+        })
+        to_lover_btn.addEventListener('click',()=>{
+            document.getElementById("switch_to_lover").style.display = "none";
+            document.getElementById("switch_to_happy").style.display = "flex";
+            
+            div_happy.classList.remove("happy_to_front")
+            div_happy.classList.add("happy_to_back")
+
+            div_lover.classList.remove("lover_to_back")
+            div_lover.classList.add("lover_to_front")
+        })
+   
+        
+    </script>
+</body>
+</html>

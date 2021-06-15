@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class">
+        
+
+            <div class="logo_with_links_and_hamburger_class">
+                <a href="index.html" class="logo"><img src="images/Jmed logo.jpg" alt="Selfy"></a>
+                <button class="hamburger_button" ></button>
+                <div class="links_in_menu">
+                    <a class="link_in_nav_menu" href="index.html">Home</a>
+                    <a class="link_in_nav_menu" href="about.html">About</a>
+                    <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                    <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                    <a class="link_in_nav_menu nav_link_active" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="nav_menu_mobile nav_menu_mobile_closed">
+                <a class="link_in_nav_menu" href="index.html">Home</a>
+                <a class="link_in_nav_menu" href="about.html">About</a>
+                <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                <a class="link_in_nav_menu nav_link_active" href="contact.html">Contact</a>
+            </div>
+            
+    </div>
+    <div class="main" id="contact_main">
+        <div class="contact_left_side">
+            <h1 class="title_part_of_main" id="contact_main_title">Rejstracja i Kontakt</h1>
+            <p class="headers_lower_text">
+                Zapraszamy do rejestracji telefonicznej 
+                <br>
+                PN - PT w godz. 09:00 - 17:00
+                <br>
+                +48 – 517 617 966
+            </p>
+            <p class="text_part_of_main">
+
+            </p>
+
+            <h1 class="title_part_of_main" id="contact_main_title">Dojazd do JMED</h1>
+            <p class="headers_lower_text">
+                Autobusy: 13, 15, 25, 27, 34, 38 
+                <br>
+                Kod Mapy Google: 22PP+QG Rzeszów 
+                <br>
+                <a href="https://www.google.pl/maps/dir/Zenitowa+5a,+35-301+Rzesz%C3%B3w/@50.0369393,22.0340711,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473cfaed6da28863:0x204310ed66c78e1!2m2!1d22.0362598!2d50.0369393?hl=pl">
+                    Wyznacz trase</a>
+            </p>
+            <p class="text_part_of_main">
+
+            </p>
+            
+        </div>
+        <div class="contact_right_side" >
+            <div id="contact_right_side_upper">
+                <h1 class="title_part_of_main">Media</h1>
+                <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/" class="yellow_hover"><p class="text_part_of_main arrow">Facebook</p></a>
+                <a href="https://www.instagram.com/jmed_specjalisci/" class="yellow_hover"><p class="text_part_of_main arrow">Instagram</p></a>
+                <a href="" class="yellow_hover"><p class="text_part_of_main arrow">Linkedin</p></a>
+            </div>
+            
+
+        </div>
+                    
+        
+    </div>
+    <div class="footer">
+        <div class="logo_links_footer">
+
+            <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/"><img src="images/icon-facebook@2x.png" alt="F"></a>
+            <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/"><img src="images/icon-facebook@2x.png" alt="F"></a>
+        </div>
+        <div class="selfy_copyright">
+            <p>© Copyright JMED 2021</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

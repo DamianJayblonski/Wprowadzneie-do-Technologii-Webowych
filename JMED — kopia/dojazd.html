@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMED Rzeszów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class">
+        <div class="logo_with_contact_class" id="white_border_bottom">
+            <a href="index.html" class="logo"><img src="images/Jmed logo.jpg" alt="Selfy"></a>   
+        </div>
+       
+        
+        
+        <div class="logo_with_hamburger_class" id="white_border_bottom">
+        
+            <button class="hamburger_button" ></button>
+            <div class="links_in_menu">
+                <a class="link_in_nav_menu" href="index.html">Główna</a>
+                <a class="link_in_nav_menu" href="personel.html">Personel</a>
+                <a class="link_in_nav_menu" href="gabinet.html">Gabinet</a>
+                <a class="link_in_nav_menu" href="galeria.html">Galeria</a>
+                <a class="link_in_nav_menu nav_link_active" href="dojazd.html">Dojazd</a>
+                <a class="link_in_nav_menu" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="nav_menu_mobile nav_menu_mobile_closed" id="white_border_bottom">
+            <a class="link_in_nav2_menu" href="index.html">Główna</a>
+            <a class="link_in_nav2_menu" href="personel.html">Personel</a>
+            <a class="link_in_nav2_menu" href="gabinet.html">Gabinet</a>
+            <a class="link_in_nav2_menu" href="galeria.html">Galeria</a>
+            <a class="link_in_nav2_menu nav_link_active" href="dojazd.html">Dojazd</a>
+            <a class="link_in_nav_menu" href="kontakt.html">Kontakt</a>
+        </div>
+            
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main" id="contact_main">
+        <div class="contact_left_side" style="border-bottom: solid 1px rgb(27, 73, 134);">
+            <h1 class="title_part_of_main" id="contact_main_title">Dojazd do J<span style="color: rgb(209, 22, 22);">MED</span></h1>
+            <p class="headers_lower_text">
+                Autobusy: 13, 15, 25, 27, 34, 38 
+                <br>
+                Kod Mapy Google: 22PP+QG Rzeszów 
+                <br>
+                <a href="https://www.google.pl/maps/dir/Zenitowa+5a,+35-301+Rzesz%C3%B3w/@50.0369393,22.0340711,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473cfaed6da28863:0x204310ed66c78e1!2m2!1d22.0362598!2d50.0369393?hl=pl">
+                    Wyznacz trase</a>
+            </p>
+            <p class="text_part_of_main">
+
+            </p>
+        </div>
+        <div></div>
+        <div class="gallery_part_of_main" id="last_gallery_part_of_main">
+            <div class="gallery_part_of_main_text_area">
+                <h1 class="title_part_of_main">Parking</h1>
+                <p class="headers_lower_text">Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.</p>
+                <p class="text_part_of_main">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae quam atque natus 
+                    mollitia hic iusto provident voluptatum, excepturi ipsum consectetur blanditiis praesentium
+                    , obcaecati itaque quas voluptates fugit quasi pariatur beatae repudiandae eum? 
+                    Exercitationem, illum?
+                </p>
+            </div>
+            <div class="gallery_gap_mobile" id="gallery_part_of_main_3_image_area">
+                <img class="white_frame gallery_images_width"  src="images/Jmed wejście.png" alt="">
+                <img class="white_frame gallery_images_width"  src="images/Jmed parking.png" alt="">
+                
+    
+            </div>
+            
+                    
+        </div>
+      <div></div>
+      <!-- <div class="about_japanese_man">
+        <img src="images/Jmed wejście.png" alt=""> 
+        <img src="images/Jmed parking.png" alt="">
+      </div> -->
+      <div style="border-top: solid 1px rgb(27, 73, 134);padding-top:15px; padding-bottom: auto;">
+            <div><iframe width=985px height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Zenitowa%205A,%20Rzesz%C3%B3w+(JMED%20Rzesz%C3%B3w)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe></div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="logo_links_footer">
+
+            <a href="https://www.instagram.com/jmed_specjalisci/"><img src="images/instagram.png" alt="F"></a>
+            <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/"><img src="images/facebook.png" alt="F"></a>
+        </div>
+        <div class="selfy_copyright">
+            <p>© Copyright JMED 2021</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

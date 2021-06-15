@@ -32,6 +32,11 @@ body {
     text-transform: uppercase;
     font-size: 20px;
 }
+#middle-bar{
+    height: 1px;
+    background-color: #242e30;
+    width: 100%;
+}
 #column-right {
     width: 400px;
 }

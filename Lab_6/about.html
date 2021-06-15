@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class" >
+            <div class="logo_with_links_and_hamburger_class">
+                <a href="index.html" class="logo"><img src="images/logo@2x.png" alt="Selfy"></a>
+                <button class="hamburger_button" ></button>
+                <div class="links_in_menu">
+                    <a class="link_in_nav_menu" href="index.html">Home</a>
+                    <a class="link_in_nav_menu nav_link_active" href="about.html">About</a>
+                    <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                    <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                    <a class="link_in_nav_menu" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="nav_menu_mobile nav_menu_mobile_closed">
+                <a class="link_in_nav_menu" href="index.html">Home</a>
+                <a class="link_in_nav_menu nav_link_active" href="about.html">About</a>
+                <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                <a class="link_in_nav_menu" href="contact.html">Contact</a>
+            </div>
+    </div>
+    <div class="main">
+        <img class="white_frame" id="about_japanese_man" src="images/mock-small.jpg" alt="">
+        <div class="headers_lower_text">
+            <h1 class="title_part_of_main" id="about_about_me">About Me</h1>
+            <p>Praesent commodo cursus magna, venenatis vestibulum. Donec id elit 
+                non mi porta gravida at eget vel scelerisl consectetur etsie.</p>
+        </div>
+        <div id="about_main_text">
+            <div id="about_main_text_1_part">
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Deleniti est repellendus hic. Similique, autem id consequuntur
+                      fugit neque impedit officia expedita, debitis, qui magni
+                       asperiores quisquam rem vel hic saepe.</p>
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti est repellendus hic. Similique, autem id consequuntur
+                    fugit neque impedit officia expedita, debitis, qui magni
+                    asperiores quisquam rem vel hic saepe.</p>
+            </div>
+            <div id="about_main_text_2_part">
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Deleniti est repellendus hic. Similique, autem id consequuntur
+                     fugit neque impedit officia expedita, debitis, qui magni
+                      asperiores quisquam rem vel hic saepe.
+                      eleniti est repellendus hic. Similique, autem id consequuntur
+                      fugit neque impedit officia expedita, debitis, qui magni
+                       asperiores quisquam rem vel hic saepe.</p>
+                <p class="text_part_of_main">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti est repellendus hic. Similique, autem id consequuntur
+                    fugit neque impedit officia expedita, debitis, qui magni
+                    asperiores quisquam rem vel hic saepe.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_links_footer">
+            <a href="#"><img src="images/icon-facebook@2x.png" alt="F"></a>
+            <a href="#"><img src="images/icon-twitter@2x.png" alt="T"></a>
+            <a href="#"><img src="images/icon-linkedin@2x.png" alt="L"></a>
+        </div>
+        <div class="selfy_copyright">
+            <a href="index.html"><img src="images/logo-foot@2x.png" alt="Selfy"></a>
+            <p>© Copyright Selfy 2013</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

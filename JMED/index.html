@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMED Rzeszów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="image_background" src="images/Jmed 1.jpg" alt="">
+    <div class="header_class" id="header_home">
+        
+
+            <div class="logo_with_links_and_hamburger_class" id="white_border_bottom">
+                <a href="index.html" class="logo"><img src="images/Jmed logo.jpg" alt="Selfy"></a>
+                <button class="hamburger_button" ></button>
+                <div class="links_in_menu">
+                    <a class="link_in_nav_menu nav_link_active" href="index.html">Home</a>
+                    <a class="link_in_nav_menu" href="about.html">About</a>
+                    <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                    <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                    <a class="link_in_nav_menu" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="nav_menu_mobile nav_menu_mobile_closed" id="white_border_bottom">
+                <a class="link_in_nav_menu nav_link_active" href="index.html">Home</a>
+                <a class="link_in_nav_menu" href="about.html">About</a>
+                <a class="link_in_nav_menu" href="styles.html">Styles</a>
+                <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                <a class="link_in_nav_menu" href="contact.html">Contact</a>
+            </div>
+            <div class="header_you_idiots_text">
+                <h1>WITAMY W ZESPOLE SPECJALISTÓW JMED</h1>
+            </div>
+    </div>
+    <div class="main" id="index_main">
+        <div class="part_of_main">
+            <h2 class="title_part_of_main">O nas</h2>
+                <p class="text_part_of_main">
+                    Nasz ośrodek powstał w 2020 jako inicjatywa współpracujących 
+                    lekarzy specjalistów 
+                    w odpowiedzi na zapotrzebowanie społeczeństwa na usługi
+                    ortopedyczno - rehabilitacyjne 
+                    <br> W tym miejscu łączymy naszą pasję z wieloletnią praktyką
+                    kliniczną w leczeniu schorzeń i urazów narządu ruchu
+
+                </p>
+                    
+        </div>
+        <div class="wpb_single_image img">
+            <img src="images/Jmed grupowe.jpg" alt="">
+        </div>
+        <div class="part_of_main_image_re">
+            <img src="images/Jmed komputer.png" alt="">
+        </div>
+        <div class="part_of_main">
+            <h2 class="title_part_of_main">Czym się zajmujemy</h2>
+                <p class="text_part_of_main">
+                    Serdecznie zapraszamy do nowo powstałych gabinetów
+                     lekarskich J Med mieszczących się w Rzeszowie przy
+                      ul. Zenitowej 5A, piętro II, gdzie możecie Państwo
+                       skonsultować stan swojego zdrowia z doświadczonymi
+                        specjalistami     z zakresu ortopedii i rehabilitacji
+
+                </p>
+                    
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo_links_footer">
+
+            <a href="https://www.instagram.com/jmed_specjalisci/"><img src="images/icon-facebook@2x.png" alt="F"></a>
+            <a href="https://www.facebook.com/pages/category/Medical---Health/JMED-Specjali%C5%9Bci-102431465256703/"><img src="images/icon-facebook@2x.png" alt="F"></a>
+        </div>
+        <div class="selfy_copyright">
+            <p>© Copyright JMED 2021</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>
