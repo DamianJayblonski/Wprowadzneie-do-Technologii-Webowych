@@ -122,7 +122,15 @@ body{
     margin-left: -40px;
     opacity: 0.7;
 }
-
+#circle:hover {
+    opacity: 0.85;
+}
+#circle2:hover {
+    opacity: 0.85;
+}
+#circle3:hover {
+    opacity: 0.85;
+}
 #second-columns{
     display: flex;
     justify-content: space-between;
